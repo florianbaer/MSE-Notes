@@ -2,7 +2,7 @@
 id: vrc7o3pbnmcqgfwbbxyx8em
 title: Introduction
 desc: ''
-updated: 1645959666855
+updated: 1646156601040
 created: 1645959299019
 ---
 # Introduction
@@ -39,12 +39,12 @@ created: 1645959299019
 
 > A machine learning program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E. - Machine Learning, T. Mitchell, 1997.
 
-![Workflow repetitions in MachineLearning](attachments/DeLearn_1_RepeateLearning.png)
+![Workflow repetitions in MachineLearning](assets/images/DeLearn_1_RepeateLearning.png)
 
 ## Supervised Machine Learning 
 > With supervised learning, the goal is to extract some relevant features x from raw observation data o and to learn a mapping from inputs x to outputs y given a set of example data called the training set. 
 
-![](attachments/Introduction_HowProceed.png)
+![Introduction](assets/images/Introduction_HowProceed.png)
 
 **PROBLEM 1**: We need large quantities of human validated examples! …and this is costly to build
 

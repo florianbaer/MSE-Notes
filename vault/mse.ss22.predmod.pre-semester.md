@@ -2,7 +2,7 @@
 id: ciu0yake7h4ydood4tvacp0
 title: Pre Semester
 desc: ''
-updated: 1645911195735
+updated: 1646156779848
 created: 1645910254420
 ---
 [[PredMod]] [[MSE]]
@@ -10,7 +10,7 @@ created: 1645910254420
 ### Cumulative Distribution Function
 Cumulative Distribution Function is defined as follows: $F(x) = P(X \le x)$ where $X$ is the set of all possible values of the random variable and $x$ is the value of the random variable at which the CDF is to be evaluated. 
 This is needed to get a range of values e.g. $F(X \in (a,b]) = P(a < X \le b)$ which is defined as $F(b) - F(a)$. Important as well. The derivative $F'(x)$ **is always 0 or bigger**
-![Example CDF](../../attachments/Example%20CDF.png)
+![Example CDF](assets/images/Example_CDF.png)
 
 ### probability density Function
 The probability density Function is defined as $f(x) = F'(x)$ which is the derivative of the CDF.
@@ -53,7 +53,7 @@ f(x) = \left\{
 \right.
 $$
 where we write $X \sim Exp(\lambda)$
-![Samples of the exponential distribution](../../attachments/ExponentialDistribution.png)
+![Samples of the exponential distribution](assets/images/ExponentialDistribution.png)
 Assuming $X \sim Exp(3)$ for $P(0 \le X \le 4)$ with R it is calculated as follows `pexp(4, rate = 3)`
 
 ### Poisson and Exponential Distribution

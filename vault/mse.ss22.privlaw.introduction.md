@@ -25,7 +25,7 @@ We spread data everywhere with the risk for loosing reputation.
 Personal data has a financial worth.
 Young generations are more sensitive to privacy than the boomers.
 
-![](attachments/SW01_Contracts.png)
+![](assets/images/SW01_Contracts.png)
 You have to check in an early stage which law fields are touched and where you can adapt (if it is not already strictly regulated and stirctly defined)
 
 A statement must be justified by an article and proof it with evidence $X = f_{\text{(Art. XXX) + (evidence YYY)}}$
@@ -45,10 +45,10 @@ Clubs are organized the same way (see above)
 - Cantons are in their power of legislation $\text{\underline{superior}}$ to the swiss confederation - its not top down, its bottem up (cantons to Country)
 - **public authority is only entitled to legislate and act in a territory if it is $\underline{\text{\textbf{explicitly constitutional legitimation}}}$**
 
-![hierarchy of law](attachments/SW01_hierarchy_of_law.png)
+![hierarchy of law](assets/images/SW01_hierarchy_of_law.png)
 Decree & Law means $\to$ Verordnung and Gesetzt
 
-![civil and public law](attachments/SW01_civil%20and%20public%20aw.png)
+![civil and public law](assets/images/SW01_civil_and_public_law.png)
 
 Civil law is for Contracts
 public law is for StGB,FMG,BÜPF/VÜPF,ElDI-V u.a.m.

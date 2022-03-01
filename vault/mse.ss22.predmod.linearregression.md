@@ -2,12 +2,12 @@
 id: ciu0yake7h4yeood4tvacp0
 title: LinearRegression
 desc: ''
-updated: 1645911195735
+updated: 1646156635969
 created: 1645910254420
 ---
 # LinearRegression
 There is an Output variable $Y$ and one or multiple Input variable $X_1,X_2,X_3$ which then looks as the following: $ Y = f(X_1, X_2, X_3) + \epsilon $
-![Which model would you choose](images/LinReg1_WhichModel.png)
+![Which model would you choose](assets/images/LinReg1_WhichModel.png)
 
 A cubic model is a linear model as well, as the $\beta$ terms are linear $\to$ $Y = \beta_1 + \beta_2 * X + \beta_3 * X^3$
 

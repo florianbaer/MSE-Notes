@@ -1,0 +1,34 @@
+version: 1
+schemas:
+- id: mse 
+  desc: MSE Notes
+  parent: root
+  children: 
+    - ss22  
+- id: ss22 
+  
+  desc: SS22 Notes
+  
+  parent: mse
+  
+  children:
+    - predmod
+    - delearn
+    - antede
+    - datamgnt
+    - privlaw
+- id: delearn
+  desc: DeLearn stuff
+  namespace: true
+- id: predmod
+  desc: PredMod stuff
+  namespace: true
+- id: antede
+  desc: AnTeDe stuff 
+  namespace: true
+- id: datamgnt
+  desc: Data Management stuff 
+  namespace: true
+- id: privlaw
+  desc: Privacy and Law stuff 
+  namespace: true

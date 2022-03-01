@@ -5,7 +5,3 @@ schemas:
     children: []
     title: root
     parent: root
-  - id: mse
-    children: []
-    title: MSE
-    parent: root

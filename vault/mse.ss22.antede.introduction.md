@@ -2,7 +2,7 @@
 id: vrc7o3pbnmcqgfwbbxyx8em
 title: Introduction
 desc: ''
-updated: 1645959638123
+updated: 1646156590292
 created: 1645959299019
 ---
 [[MSE]] [[AnTeDe]]
@@ -21,7 +21,7 @@ It is important to take to correct metric for getting the right result. F1_Score
 1. Present the solution to colleagues.
 1. Launch and monitor the system.
 
-![How to proceed with NLP](attachments/AnTeDe1_Proceed.png)
+![How to proceed with NLP](assets/images/AnTeDe1_Proceed.png)
 ## Data preparation
 1. Train a model with the data and evaluate it based on the validation / development set.
 1. Get insights how your selected model will perform with the test-data (**ONLY AT THE END WHEN THE MODEL IS SELECTED**)
