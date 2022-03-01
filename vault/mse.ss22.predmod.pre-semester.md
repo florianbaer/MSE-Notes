@@ -1,6 +1,6 @@
 ---
 id: ciu0yake7h4ydood4tvacp0
-title: Pre-Semester
+title: Pre Semester
 desc: ''
 updated: 1645911195735
 created: 1645910254420

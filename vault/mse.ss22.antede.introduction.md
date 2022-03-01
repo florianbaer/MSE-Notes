@@ -1,6 +1,6 @@
 ---
 id: vrc7o3pbnmcqgfwbbxyx8em
-title: Introduction AnTeDe
+title: Introduction
 desc: ''
 updated: 1645959638123
 created: 1645959299019

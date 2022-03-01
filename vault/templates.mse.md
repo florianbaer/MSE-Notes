@@ -1,6 +1,6 @@
 ---
 id: l7jvkqdtaanqu9vhtyegn8e
-title: ${1:Title}
+title: Mse
 desc: ''
 updated: 1645910131207
 created: 1645867607698

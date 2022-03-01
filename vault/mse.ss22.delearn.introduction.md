@@ -1,6 +1,6 @@
 ---
 id: vrc7o3pbnmcqgfwbbxyx8em
-title: Introduction DeLearn
+title: Introduction
 desc: ''
 updated: 1645959666855
 created: 1645959299019

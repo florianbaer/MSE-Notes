@@ -1,6 +1,6 @@
 ---
 id: o2wa2tp4y6f1ov9u6fhw7u7
-title: Introduction PrivLaw
+title: Introduction
 desc: ''
 updated: 1645959405562
 created: 1645959377865
