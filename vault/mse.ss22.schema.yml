@@ -6,11 +6,8 @@ schemas:
   children: 
     - ss22  
 - id: ss22 
-  
   desc: SS22 Notes
-  
   parent: mse
-  
   children:
     - predmod
     - delearn
