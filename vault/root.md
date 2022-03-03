@@ -2,9 +2,8 @@
 id: ofsa5s7zh7imqa042iv23kt
 title: Root
 desc: ''
-updated: 1646295185715
+updated: 1646324578684
 created: 1646295077431
-stub: true
 ---
 # Welcome to Dendron
 
