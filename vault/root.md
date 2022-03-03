@@ -1,9 +1,10 @@
 ---
-id: cmp7cn166wlnnfaaxpol5s0
+id: ofsa5s7zh7imqa042iv23kt
 title: Root
 desc: ''
-updated: 1645867060070
-created: 1645867060070
+updated: 1646295185715
+created: 1646295077431
+stub: true
 ---
 # Welcome to Dendron
 

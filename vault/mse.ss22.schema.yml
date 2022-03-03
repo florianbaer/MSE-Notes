@@ -16,16 +16,16 @@ schemas:
     - privlaw
 - id: delearn
   desc: DeLearn stuff
-  namespace: true
+  namespace: false
 - id: predmod
   desc: PredMod stuff
-  namespace: true
+  namespace: false
 - id: antede
   desc: AnTeDe stuff 
-  namespace: true
+  namespace: false
 - id: datamgnt
   desc: Data Management stuff 
-  namespace: true
+  namespace: false
 - id: privlaw
   desc: Privacy and Law stuff 
-  namespace: true
+  namespace: false
