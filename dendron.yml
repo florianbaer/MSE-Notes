@@ -87,7 +87,7 @@ publishing:
     siteRootDir: docs
     seo:
         title: Dendron
-        description: Personal Knowledge Space
+        description: MSE Notes by Florian Bär
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub
