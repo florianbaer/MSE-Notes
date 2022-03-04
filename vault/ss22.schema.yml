@@ -1,0 +1,26 @@
+version: 1
+schemas:
+- id: MSE
+  desc: SS22 Notes
+  parent: root
+  children: 
+    - ss22  
+- id: ss22 
+  desc: SS22 Notes
+  parent: MSE
+  children:
+    - pattern: AnTeDe
+      namespace: true
+      template: templates.mse.fach
+    - pattern: DataMgmt
+      namespace: true
+      template: templates.mse.fach
+    - pattern: PredMod
+      namespace: true
+      template: templates.mse.fach
+    - pattern: DeLearn
+      namespace: true
+      template: templates.mse.fach
+    - pattern: PrivLaw
+      namespace: true
+      template: templates.mse.fach

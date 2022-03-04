@@ -72,6 +72,8 @@ preview:
     enablePrettyRefs: true
     enableKatex: true
     automaticallyShowPreview: false
+    enableFrontmatterTags: true
+    enableHashesForFMTags: false
 publishing:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -96,3 +98,4 @@ publishing:
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enablePrettyLinks: true
+    siteUrl: https://florianbaer.github.io/dendron/

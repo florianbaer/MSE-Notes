@@ -16,4 +16,4 @@ And even further extensible with extensions (e.g. PostGIS)
 
 [[mse.ss22.datamgmt.cte]]
 
-[[mse.ss22.datamgmt.arraytypes]]
+[[datamgmt.arraytypes]]
