@@ -72,8 +72,6 @@ preview:
     enablePrettyRefs: true
     enableKatex: true
     automaticallyShowPreview: false
-    enableFrontmatterTags: true
-    enableHashesForFMTags: false
 publishing:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -85,6 +83,7 @@ publishing:
         - root
     writeStubs: false
     siteRootDir: docs
+    siteUrl: https://florianbaer.github.io/dendron/
     seo:
         title: Dendron
         description: MSE Notes by Florian Bär
@@ -98,4 +97,3 @@ publishing:
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enablePrettyLinks: true
-    siteUrl: https://florianbaer.github.io/dendron/

@@ -1,0 +1,33 @@
+<h1 id="learningandoptimization"><a aria-hidden="true" class="anchor-heading" href="#learningandoptimization"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Learningandoptimization</h1>
+<h1 id="learning-and-optimization"><a aria-hidden="true" class="anchor-heading" href="#learning-and-optimization"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Learning and Optimization</h1>
+<p>Target for this week: Gradient Descent / stochastic gradient descent</p>
+<h2 id="general-regression-problem"><a aria-hidden="true" class="anchor-heading" href="#general-regression-problem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>General Regression Problem</h2>
+<p>Learning a numeric value from a set of datapoints.</p>
+<h2 id="classification-problem"><a aria-hidden="true" class="anchor-heading" href="#classification-problem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Classification Problem</h2>
+<p>Classification of a set of datapoints into a set of classes.</p>
+<p>Full Batch Gradient Descent
+Mini-Batch Gradient Descent or Stochastic Gradient Descent</p>
+<ul>
+<li>You need to make the learning rate smaller with stochastic gradient descent</li>
+<li>Less epochs needed - as per Batch the calculation is done</li>
+<li>Calculation-Time is increaed per Epoch, as calculation is done per batch</li>
+</ul>
+<h2 id="hyperparameters"><a aria-hidden="true" class="anchor-heading" href="#hyperparameters"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hyperparameters</h2>
+<ul>
+<li>Batch Size
+<ul>
+<li><span class="math math-inline">\epsilon \sim \frac{1}{\sqrt{\text{batchsize}}}</span></li>
+</ul>
+</li>
+<li>Learning rate
+<ul>
+<li><span class="math math-inline">\epsilon \sim \alpha</span></li>
+</ul>
+</li>
+</ul>
+<p>Error bars scale with the learning rate <span class="math math-inline">\alpha</span></p>
+<p>Watch <code>torch.nn.CrossEntropyLoss</code></p>
+<h1 id="todos"><a aria-hidden="true" class="anchor-heading" href="#todos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>ToDos</h1>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> Watch the math behind DeLearn</li>
+</ul>
