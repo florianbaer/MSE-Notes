@@ -83,8 +83,8 @@ publishing:
         - root
     writeStubs: false
     siteRootDir: docs
-    siteUrl: https://florianbaer.github.io
     assetsPrefix: /MSE-Notes
+    siteUrl: https://florianbaer.github.io
     seo:
         title: Dendron
         description: MSE Notes by Florian Bär
