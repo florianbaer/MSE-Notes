@@ -2,7 +2,7 @@
 id: ciu0yake7h4yeoop4tvacp0
 title: Introduction
 desc: ''
-updated: 1646156592971
+updated: 1646583532897
 created: 1645910254420
 ---
 [[MSE]] Topic: [[DataMgmt]]
@@ -16,3 +16,7 @@ You should use different Databases to takle different Problems.
 - Polyglot persistence can apply across an enterprise or within a single application.
 - Encapsulating data access into services reduces the impact of data storage choices on other parts of a system.
 - Adding more data storage technologies increases complexity in programming and operations, so the advantages of a good data storage fit need to be weighed against this complexity.
+
+$$ 
+\nearrow
+$$

@@ -2,7 +2,7 @@
 id: vrc7o3pbnmcqgfwbbxyx8em
 title: Introduction
 desc: ''
-updated: 1646583436516
+updated: 1646583550528
 created: 1645959299019
 ---
 # Introduction
@@ -21,7 +21,7 @@ created: 1645959299019
 2. Generate new data
 3. High dimensional data (images, sound)
 
-## DL $\neq$ ML?
+## DL $\ne$ ML?
 1. DL is learning from feature extraction
 2. DL is a part of ML
 
