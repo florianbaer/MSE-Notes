@@ -2,10 +2,10 @@
 id: 8b4pyr2t1w9jtzdyoffd91n
 title: Sw01
 desc: ''
-updated: 1646068649041
+updated: 1646848355259
 created: 1646067782516
 ---
-
+[[mse.ss22.sw01]]
 
 # Case 1
 
