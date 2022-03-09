@@ -2,7 +2,7 @@
 id: d1gf7ejaj3q3ejp0sraf5u8
 title: Multiplelinearregression
 desc: ''
-updated: 1646820556203
+updated: 1646820992918
 created: 1646812960677
 ---
 # Multiple Linear Regression
@@ -29,7 +29,7 @@ $$\text{RSS} = \sum_{i = 1}^{n} r^2_i \to r = (y_i - \hat{\beta_1} x_{i 1} - \ha
 
 Do all predictors $X_1$ to $X_n$ help to get the response variable or only a subset of them? How well does the model fit the data?
 
-$$ E(\frac{\text{RSS}}{n - p - 1}) = \sigma^2 = E(\frac{\text{TSS} - \text{RSS}}{p}) \to \text{if the null hypothesis is true}$$
+$$E(\frac{\text{RSS}}{n - p - 1}) = \sigma^2 = E(\frac{\text{TSS} - \text{RSS}}{p}) \to \text{if the null hypothesis is true}$$
 **else it would be**
 $$E(\frac{\text{TSS} - \text{RSS}}{p}) > \sigma^2$$ 
 **! Where p is the number of predictor variables !**
