@@ -1,9 +1,9 @@
 ---
-id: vrc7o3pbnmcqgfwbbxyx8em
-title: Introduction
+id: 140r88bw7vk5atyc6qln99g
+title: Intro
 desc: ''
-updated: 1646156590292
-created: 1645959299019
+updated: 1646822344385
+created: 1646822342907
 ---
 [[MSE]] [[AnTeDe]]
 # Introduction
@@ -32,3 +32,4 @@ Check for the different kind of Tags (There are 9 Categories). You can tag them 
 
 ## Tokenization / Sentence Segmentation
 You can combine them to fix issues with *Mr. Jones* which could by a sentence split by easy rules.
+

@@ -1,9 +1,9 @@
 ---
-id: vrc7o3pbnmcqgfwbbxyx8em
-title: Introduction
+id: mp3s2gbnpnh2pqt1bz9y28j
+title: Introduction DeLearn
 desc: ''
-updated: 1646583550528
-created: 1645959299019
+updated: 1646822292181
+created: 1646822250433
 ---
 # Introduction
 
@@ -51,4 +51,5 @@ created: 1645959299019
 **PROBLEM 2**: Because of the variabilities, we will need even more data and the mapping functions need to capture more complexities. 
 
 **PROBLEM 3**: We usually spend a lot of time to hand-craft interesting compact features, this is called feature engineering
+
 
