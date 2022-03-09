@@ -2,10 +2,11 @@
 id: d1gf7ejaj3q3ejp0sraf5u8
 title: Multiplelinearregression
 desc: ''
-updated: 1646818785494
+updated: 1646820556203
 created: 1646812960677
 ---
 # Multiple Linear Regression
+[[mse.ss22.SW03]]
 
 Example with advertising. Sales ~ TV looks good with a $log$ transformation of the response variable.
 
@@ -42,5 +43,20 @@ $R^2 = Corr(Y, \hat{Y})^2$
 
 Dont always look to the R^2 value - look as well to the residual plots
 # [[mse.ss22.predmod.ftest]]
-Test
 
+# Qualitative Variables
+[[mse.ss22.predmod.qualitativevariables]]
+
+# Additivity vs Interaction
+Additivity is not fullfilled in the following example 
+![Additivity](/assets/images/2022-03-09-11-00-10.png)
+To fix this, we can add an interaction term 
+![Interaction Term added](/assets/images/2022-03-09-11-01-19.png)
+
+
+The $r^2$ value with the interaction term is much higher than the one without interraction term
+If you invest into radio - the next investement into tv will be more effective!
+$(\hat{\beta_1} + \hat{\beta_2} * \text{radio}) = 1.9 + 1.1 * radio$
+
+See example for income with qualitative variable student
+Slope of the regression line changes
