@@ -2,7 +2,7 @@
 id: kuwbzu69c3mhulobjgu0v5m
 title: Textclassification
 desc: ''
-updated: 1646300966179
+updated: 1646908950394
 created: 1646295448228
 ---
 # Text Classification
@@ -36,6 +36,40 @@ Bernoulli model (if word is in document) or multinominal model when $f_i$ is a c
 
 Naive bayes is the probability of class c with the product of conditioanl probabilities of each word in the document.
 
-$$c_{nb} = \text{arg max}_{c \in C} P(c) \product_{k = 1}^N P(x_k | c)$$
+$$c_{nb} = \text{arg max}_{c \in C} P(c) \prod_{k = 1}^N P(x_k | c)$$
 
 **Slide 18** every class observed $\frac{1}{3}$
+
+## Evaluation
+
+### Accuracy
+### Precision
+Fraction of test documents classified as c that have been correctly classified - only look at the predicted class
+
+$$P_c = \frac{TP}{TP + FP}$$
+### Recall
+The fraction of test document labeld as c that have been correctly classified - look a the test labels given by the data
+
+$$R_c = \frac{TP}{TP + FN}$$
+### $F_1$ Score
+Harmoic mean of precision and recall
+
+### Confusion Matrix
+Gives an overview about the performance of your model. 
+
+![Confusion Matrix](/assets/images/2022-03-10-09-50-12.png)
+Accuarcy is 2/3 - sum of diagonal from top right to bottom left divided by the overall sum.
+
+Precision: given a column (i.e., a predicted label), element on main diagonal over sum of matrix column - geneva example: $\frac{1}{1}$
+
+
+Recall: given a row (i.e., a test label), element on main diagonal over sum of matrix row - bern example $\frac{1}{2}$
+**Only works this when test labels on the left handed side and predicted labels on the bottom - caution - it could flip!**
+
+# Final Exam Help
+- [ ] Recalculate all the Metrics
+
+[[mse.ss22.finalexams]]
+
+
+
