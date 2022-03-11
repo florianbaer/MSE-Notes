@@ -1,8 +1,8 @@
 ---
 id: 3qkegx4d6ewiusgycyhc7ph
-title: Cte
+title: CTE
 desc: ''
-updated: 1646230416535
+updated: 1646985305566
 created: 1646228736218
 ---
 # Common Table Expressions
