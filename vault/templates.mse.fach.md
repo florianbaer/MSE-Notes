@@ -1,8 +1,8 @@
 ---
 id: l7jvkqdtaanqu9vhtyegn8e
-title: ${1:Woche}
+title: asdf
 desc: ''
-updated: 1646404734426
+updated: 1646983740788
 created: 1645867607698
 ---
-[[MSE]] Topic: ${2|PredMod,DataMgmt,AnTeDe,PrivLaw,DeLearn|}
+[[MSE]] Topic: 

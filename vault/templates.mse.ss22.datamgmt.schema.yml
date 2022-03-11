@@ -1,0 +1,30 @@
+version: 1
+imports: []
+schemas:
+  - id: mse
+    title: mse
+    parent: root
+    children:
+      - pattern: ss22
+        children:
+          - pattern: datamgmt
+            children:
+              - pattern: '*'
+                template: templates.mse.fach.md
+          - pattern: antede
+            children:
+              - pattern: '*'
+                template: templates.mse.fach.md
+          - pattern: privlaw
+            children:
+              - pattern: '*'
+                template: templates.mse.fach.md
+          - pattern: predmod
+            children:
+              - pattern: '*'
+                template: templates.mse.fach.md
+          - pattern: delearn
+            children:
+              - pattern: '*'
+                template: templates.mse.fach.md
+
