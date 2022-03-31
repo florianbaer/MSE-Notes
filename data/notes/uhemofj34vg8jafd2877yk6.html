@@ -1,0 +1,50 @@
+<h1 id="arraytypes"><a aria-hidden="true" class="anchor-heading" href="#arraytypes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Arraytypes</h1>
+<h1 id="array-types"><a aria-hidden="true" class="anchor-heading" href="#array-types"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Array types</h1>
+<ul>
+<li>Arrays are a sort of collections</li>
+<li>They have a fixed or variable size</li>
+</ul>
+<p>In pg - any datatype can be stored as array and are <strong>index 1 based</strong>!</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> sal_emp <span class="token punctuation">(</span> 
+    name <span class="token keyword">text</span><span class="token punctuation">,</span> 
+    pay_by_quarter <span class="token keyword">integer</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+    schedule <span class="token keyword">text</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment">-- two dimensional array</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> sal_emp <span class="token keyword">VALUES</span> <span class="token punctuation">(</span>
+<span class="token string">'Bill'</span><span class="token punctuation">,</span> 
+ARRAY<span class="token punctuation">[</span><span class="token number">10000</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+ARRAY<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'meeting'</span><span class="token punctuation">,</span> <span class="token string">'lunch'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+<span class="token punctuation">[</span><span class="token string">'training'</span><span class="token punctuation">,</span> <span class="token string">'presentation'</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+<span class="token comment">-- Works as well</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token operator">+</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+<span class="token comment">-- returns an array with values {1,2,7}</span>
+
+
+<span class="token comment">-- equal: =</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">1.1</span><span class="token punctuation">,</span><span class="token number">2.1</span><span class="token punctuation">,</span><span class="token number">3.1</span><span class="token punctuation">]</span>::<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">-- !!</span>
+<span class="token comment">-- is contained by: &#x3C;@</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&#x3C;</span>@ ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">-- !! </span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span> <span class="token operator">&#x3C;</span>@ ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">-- overlap - have at least one element in common: &#x26;&#x26;</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">&#x26;&#x26;</span> ARRAY<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">-- ANY syntax</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> sal_emp
+<span class="token keyword">WHERE</span> <span class="token number">30000</span> <span class="token operator">=</span> <span class="token keyword">ANY</span> <span class="token punctuation">(</span>pay_by_quarter<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+
+<span class="token comment">--- is the value 3 and 77 and 1 in the array 3,1,4</span>
+<span class="token keyword">SELECT</span> ARRAY<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">77</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&#x3C;</span>@ ARRAY<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">-- will output false!</span>
+
+</code></pre>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/MSE-Notes/notes/vb4bhayfh0jrbwytvdf4p1y">Sw01</a></li>
+</ul>

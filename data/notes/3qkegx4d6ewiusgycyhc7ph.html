@@ -1,0 +1,29 @@
+<h1 id="cte"><a aria-hidden="true" class="anchor-heading" href="#cte"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CTE</h1>
+<h1 id="common-table-expressions"><a aria-hidden="true" class="anchor-heading" href="#common-table-expressions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Common Table Expressions</h1>
+<p>CTE can be used with recursive clause to deal with hierarchical or tree structured data.</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">WITH</span> movies_etp <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">from</span> movies <span class="token keyword">WHERE</span> name <span class="token operator">ilike</span> ‘P<span class="token operator">%</span>’
+<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token comment">--tmp2 AS (</span>
+<span class="token comment">--…</span>
+<span class="token comment">--)</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">from</span> movies_etp <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> name<span class="token punctuation">;</span>
+
+</code></pre>
+<p>for recursive calls:</p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">WITH</span> RECURSIVE query_name <span class="token punctuation">[</span> <span class="token punctuation">(</span>column_name <span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">]</span> <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+<span class="token comment">-- non-recursive term</span>
+<span class="token keyword">SELECT</span> …
+<span class="token keyword">UNION</span> <span class="token keyword">ALL</span>
+<span class="token comment">-- recursive term</span>
+<span class="token keyword">SELECT</span> …
+<span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+</code></pre>
+<p>A datatype defines possible values - e.g. Int = integer numbers but defines as well how data is stored and indexed.
+Contains as well constructors, operators, functions and optimizers (with index extensions)</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/MSE-Notes/notes/vb4bhayfh0jrbwytvdf4p1y">Sw01</a></li>
+</ul>

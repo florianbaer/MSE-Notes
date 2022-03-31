@@ -1,0 +1,16 @@
+<h1 id="lms-2"><a aria-hidden="true" class="anchor-heading" href="#lms-2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LMS 2</h1>
+<h1 id="variance-inflation-factor-vif"><a aria-hidden="true" class="anchor-heading" href="#variance-inflation-factor-vif"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Variance inflation factor (vif)</h1>
+<p>If VIF is between 5 and 10 - it will become problematic regarding collinearity</p>
+<p>Smallest value of vif is 1</p>
+<h1 id="if-you-want-to-add-a-squared-term"><a aria-hidden="true" class="anchor-heading" href="#if-you-want-to-add-a-squared-term"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>if you want to add a squared term</h1>
+<pre class="language-r"><code class="language-r">summary<span class="token punctuation">(</span>lm<span class="token punctuation">(</span>mpg <span class="token operator">~</span> horsepower <span class="token operator">+</span> I<span class="token punctuation">(</span>horsepower<span class="token operator">^</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> data <span class="token operator">=</span> Auto<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">$</span>r.squared
+</code></pre>
+<p>Add the <strong>I</strong> before the squred term!!!</p>
+<ol>
+<li>plot is tukey ascom</li>
+<li>normal plot</li>
+<li>scale-location plot</li>
+<li>cooks-distance plot</li>
+<li>residuals vs leverage</li>
+</ol>
+<h1 id="lms21-shows-forward"><a aria-hidden="true" class="anchor-heading" href="#lms21-shows-forward"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LMS2.1 shows forward</h1>

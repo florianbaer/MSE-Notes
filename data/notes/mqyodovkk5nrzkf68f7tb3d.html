@@ -1,0 +1,64 @@
+<h1 id="sentimentanalysis"><a aria-hidden="true" class="anchor-heading" href="#sentimentanalysis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sentimentanalysis</h1>
+<h1 id="sentiment-analysis"><a aria-hidden="true" class="anchor-heading" href="#sentiment-analysis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sentiment Analysis</h1>
+<p>Target is to understand the emotional state of the author of a text, which can be <strong>extremly hard.</strong></p>
+<p>Can be misleading :
+<img src="/MSE-Notes/assets/images/2022-03-10-10-47-08.png" alt="Missleading example using sentiment analysis"></p>
+<ul>
+<li>The following thing have the be taken into accoutn:</li>
+<li>opinion holder: whose opinion is this?</li>
+<li>target entity: what is this opinion about?</li>
+<li>aspect: specific feature of the target that this opinion is about</li>
+<li>type: most commonly positive, negative, neutral, along with an indication of strength</li>
+<li>time when this opinion was expressed</li>
+</ul>
+<p><img src="/MSE-Notes/assets/images/2022-03-10-10-49-51.png" alt="Example of entities"></p>
+<h2 id="dog-example"><a aria-hidden="true" class="anchor-heading" href="#dog-example"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dog Example</h2>
+<p><img src="/MSE-Notes/assets/images/2022-03-10-10-51-35.png" alt="Dog Example"></p>
+<ul>
+<li>There are problems with negations
+<blockquote>
+<p>I didn't like it.</p>
+</blockquote>
+</li>
+<li>There are problems with modal words
+<blockquote>
+<p>Many consider the movie bewildering, boring or slow-moving or annoying</p>
+</blockquote>
+</li>
+<li>Not literal language 
+<blockquote>
+<p>Not exactly a masterpiece</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="simplify-the-problem"><a aria-hidden="true" class="anchor-heading" href="#simplify-the-problem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Simplify the problem</h2>
+<ul>
+<li>
+<p>Subtlety: Let’s all go to see Miss Hepburn and hear her run the gamut of emotions from A to B! Dorothy Parker (1893-1967), American writer (criticizing the American actress Katharine Hepburn in 1934)</p>
+</li>
+<li>
+<p>Sarcasm: The staff went out of their way to make us look forward to
+the end of our vacation.</p>
+</li>
+</ul>
+<h2 id="approach"><a aria-hidden="true" class="anchor-heading" href="#approach"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Approach</h2>
+<ol>
+<li>tokenization (often hard with informal text)</li>
+<li>feature extraction</li>
+<li>classification (NB, MaxEnt, SVM)</li>
+<li>two or three classes: {positive | negative | (neutral)}</li>
+</ol>
+<p>In Sentitment-Analysis topic words are not as importat as sentitment words such as splendid (prächtig) and bad.</p>
+<p>Turney (2002) startet it using a POS-Tagger (1), then estimate the <strong>semantic orientation</strong> (2) and then <strong>classified on the average semantic orientation</strong></p>
+<h2 id="pmi"><a aria-hidden="true" class="anchor-heading" href="#pmi"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PMI</h2>
+<p>Semantic orientation is computed based on Pointwise Mutual Information (PMI)
+<img src="/MSE-Notes/assets/images/2022-03-10-11-25-36.png" alt="Probability calculation"></p>
+<p><img src="/MSE-Notes/assets/images/2022-03-10-11-28-52.png" alt="Calculation of the PMI">
+Where the second <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">#Academy (Private)</a> should be <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">#Award (Private)</a></p>
+<ul>
+<li>Words with high PMI are very likely to occur jointly</li>
+<li>Two words with low PMI are very likely to occur separately</li>
+<li>The PMI of select <em>bigrams</em> with reference words is computed</li>
+<li>excellent for positive reviews and poor for negative reviews is poor</li>
+</ul>
+<p><img src="/MSE-Notes/assets/images/2022-03-10-11-32-39.png" alt="Phrase - PMI Calculation"></p>

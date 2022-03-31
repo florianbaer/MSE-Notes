@@ -1,0 +1,73 @@
+<h1 id="key-value-stores"><a aria-hidden="true" class="anchor-heading" href="#key-value-stores"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Key-Value Stores</h1>
+<h1 id="key-value-stores-1"><a aria-hidden="true" class="anchor-heading" href="#key-value-stores-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Key value stores</h1>
+<p><a href="/MSE-Notes/notes/1yfdsj6hlbkmez4crwxt09b">Sw03</a></p>
+<p>One way of usig it in postgres is <code>hstore</code></p>
+<pre class="language-sql"><code class="language-sql"><span class="token comment">--enable exteinos</span>
+<span class="token keyword">create</span> extension hstore
+
+<span class="token comment">-- delete extension </span>
+<span class="token keyword">drop</span> extension hstore
+
+<span class="token comment">-- usage</span>
+<span class="token keyword">select</span> <span class="token string">'a=>x, b=>y'</span>::hstore <span class="token operator">-</span><span class="token operator">></span> <span class="token string">'a'</span> <span class="token comment">-- is an extension delivered with postgres-contrib</span>
+</code></pre>
+<p>Dictionary is an abstract data structure which contains a value or several values.</p>
+<p>Key values pairs are used to make a schema-less / schema-later / open schema model.</p>
+<ul>
+<li><strong>Possibly suitable for</strong>
+<ul>
+<li>Easy data storage and data capture</li>
+<li>Rows with many attributes that are rarely examined</li>
+<li>Semi-structured data</li>
+</ul>
+</li>
+<li><strong>Tips</strong>
+<ul>
+<li>Try to avoid reporting against big heaps of Dictionaries</li>
+<li>Consider additional attributes with lookup keys (see Free Text Search)</li>
+<li>Consider running triggers or a post-process to transform KVPs into an entity-based schema.</li>
+</ul>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token string">'a => 1, a=>2'</span>::hstore<span class="token punctuation">;</span> <span class="token comment">-- only saves the first occurance </span>
+<span class="token comment">-- "a" => "1", so value 2 is ignored</span>
+
+<span class="token keyword">select</span> akeys<span class="token punctuation">(</span><span class="token string">'key3=>3, key2=>2'</span>::hstore<span class="token punctuation">)</span>
+<span class="token comment">-- [key3, key2]</span>
+
+<span class="token keyword">select</span> <span class="token number">1</span> <span class="token keyword">as</span> id<span class="token punctuation">,</span> each<span class="token punctuation">(</span><span class="token string">'key3=>3, key2=>2'</span>::hstore<span class="token punctuation">)</span> <span class="token comment">-- returns tuples</span>
+
+<span class="token keyword">select</span> each<span class="token punctuation">(</span>kykvpfield<span class="token punctuation">)</span> <span class="token keyword">from</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token comment">-- returns all kvp as tuples</span>
+</code></pre>
+<h1 id="postgis"><a aria-hidden="true" class="anchor-heading" href="#postgis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PostGIS</h1>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span><span class="token punctuation">,</span> tags<span class="token operator">-</span><span class="token operator">></span><span class="token string">'tourism'</span> <span class="token keyword">as</span> featureclass
+<span class="token keyword">from</span> osm_location <span class="token keyword">where</span> tags<span class="token operator">-</span><span class="token operator">></span><span class="token string">'tourism'</span> <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token string">'camp_site'</span><span class="token punctuation">,</span><span class="token string">'caravan_site'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- find camping sites on https://terminal.osmdatapipeline.geoh.infs.ch/</span>
+</code></pre>
+<h1 id="tree"><a aria-hidden="true" class="anchor-heading" href="#tree"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tree</h1>
+<p>A tree is a graph without cycles</p>
+<ul>
+<li>Parent / Child / Ancestor Nodes</li>
+<li>Sibling Nodes</li>
+<li>Root Node: Only Node which does’nt have a parent</li>
+<li>Leaf Node: Node which has no child</li>
+<li>Internal Node: Node which is neither the root nor the leaf node</li>
+<li>Level of a Node (depth)</li>
+<li>Degree of a Node: No. of children a node has</li>
+<li>Height of Tree: Max. level of nodes in that tree</li>
+<li>Subtree of a Tree</li>
+</ul>
+<p><strong>Postgres even has Ltree</strong></p>
+<p><img src="/MSE-Notes/assets/images/2022-03-09-14-44-39.png" alt="Tree Data Structures"></p>
+<h1 id="json"><a aria-hidden="true" class="anchor-heading" href="#json"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>JSON</h1>
+<p>PostgreSQL knows JSON and JSONB</p>
+<ul>
+<li>JSON: Textual storage «as is», multiple keys</li>
+<li>JSONB: Internal binary, one key, indexable</li>
+</ul>
+<p><strong>use jsonb_pretty() for printing</strong></p>
+<p>Accessors: ->, ->> #>, #>>
+Processing: @></p>
+<pre class="language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token string">'{"a":1, "b":2, "c":3}'</span>::jsonb @<span class="token operator">></span> <span class="token string">'{"c":3, "b":2}'</span>::jsonb
+<span class="token comment">-- returns ture</span>
+</code></pre>

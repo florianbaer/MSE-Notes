@@ -1,0 +1,103 @@
+<h1 id="overfitting_and_regularization"><a aria-hidden="true" class="anchor-heading" href="#overfitting_and_regularization"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Overfitting_and_regularization</h1>
+<p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">mse.ss22.sw04 (Private)</a>
+<a href="/MSE-Notes/notes/dzkel6khq6cnvj7ie210453">MSE</a> Topic: <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">DeLearn (Private)</a></p>
+<h2 id="recap"><a aria-hidden="true" class="anchor-heading" href="#recap"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Recap</h2>
+<h2 id="learning-model-from-data"><a aria-hidden="true" class="anchor-heading" href="#learning-model-from-data"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Learning Model from Data</h2>
+<p>form probability distribution denoted by $ Z \approx P(\cdot)$</p>
+<p>supervised learning</p>
+<ul>
+<li>features with given labels</li>
+</ul>
+<p>unspuervised learning</p>
+<ul>
+<li>e.g. density estimation without labels</li>
+</ul>
+<p>define a loss function <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo separator="true">,</mo><mi>z</mi><mo>→</mo><mi>L</mi><mo stretchy="false">(</mo><mi>f</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f,z \to L(f,z) \ge 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span></p>
+<ul>
+<li>CE Loss</li>
+<li>MSE Loss</li>
+</ul>
+<p>minimize statistical / expected risk of the model</p>
+<h3 id="statistical-risk"><a aria-hidden="true" class="anchor-heading" href="#statistical-risk"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Statistical Risk</h3>
+<p>Not tractable (handhabbar)</p>
+<h3 id="empirical-risk-cost"><a aria-hidden="true" class="anchor-heading" href="#empirical-risk-cost"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Empirical Risk, Cost</h3>
+<p>create a model from samples and sum the loss of all the sample
+<img src="/MSE-Notes/assets/images/2022-03-17-13-34-13.png" alt="Empirical Risk (Cost)">
+Does not generalize </p>
+<h3 id="parametric-empirical-risk-minimazation"><a aria-hidden="true" class="anchor-heading" href="#parametric-empirical-risk-minimazation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Parametric Empirical Risk minimazation</h3>
+<p>Transform model into parametric model to find optimal parameters</p>
+<h3 id="shaping-solutions"><a aria-hidden="true" class="anchor-heading" href="#shaping-solutions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Shaping solutions</h3>
+<ul>
+<li>increate numebr of samples</li>
+<li>selection of a suitable class of parametric model
+<ul>
+<li>crucial that the solution work with new data</li>
+<li>choose the most simple model if multiple models performe equally well (what is simple?)</li>
+</ul>
+</li>
+<li>adjust the loss function (make the solution less dependent on the training data)
+<ul>
+<li>regularization</li>
+<li>margin maximization</li>
+<li>ensemble methods</li>
+</ul>
+</li>
+</ul>
+<h3 id="error-decomposition"><a aria-hidden="true" class="anchor-heading" href="#error-decomposition"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Error Decomposition</h3>
+<p>Error contains the following components:</p>
+<ul>
+<li>variance</li>
+<li>bias
+<img src="/MSE-Notes/assets/images/2022-03-17-13-48-46.png" alt="Variance and Bias in Model">
+which both are dependent on the performance of the model</li>
+</ul>
+<p>Visual overfitting for further analysis as in the image below
+<img src="/MSE-Notes/assets/images/2022-03-17-14-03-39.png" alt="Furhter analysis of overfitting"></p>
+<p><strong>Neural Networks are rather low variance learners</strong>
+<img src="/MSE-Notes/assets/images/2022-03-17-14-12-01.png" alt="Neural Network learning"></p>
+<h3 id="deep-double-descent"><a aria-hidden="true" class="anchor-heading" href="#deep-double-descent"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Deep double descent</h3>
+<p>Problem of neural Networks which increase performance with more layers. But inference time is decreasing with more layers.
+<img src="/MSE-Notes/assets/images/2022-03-17-14-36-32.png" alt="deep double descent"></p>
+<h1 id="overfitting-problems"><a aria-hidden="true" class="anchor-heading" href="#overfitting-problems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Overfitting problems</h1>
+<p>Regularization methods</p>
+<ul>
+<li>contrain model parameters (weight penalty)</li>
+<li>early stopping (before high variance occurs)</li>
+<li>add noise to training process</li>
+<li>increase variety in training data</li>
+</ul>
+<h2 id="weight-penalty"><a aria-hidden="true" class="anchor-heading" href="#weight-penalty"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>weight penalty</h2>
+<p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><msub><mi>C</mi><mn>0</mn></msub><mo>+</mo><mi>λ</mi><mi mathvariant="normal">Ω</mi><mo stretchy="false">(</mo><mi>W</mi><mo stretchy="false">)</mo><mspace width="1em"></mspace><mtext>where</mtext><mspace width="1em"></mspace><mo stretchy="false">(</mo><mi>λ</mi><mo>≥</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = C_0 + \lambda\Omega(W) \quad \text{where} \quad (\lambda \ge 0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">λ</span><span class="mord">Ω</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mclose">)</span><span class="mspace" style="margin-right:1em;"></span><span class="mord text"><span class="mord">where</span></span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span></span> </p>
+<h2 id="gradient-descent"><a aria-hidden="true" class="anchor-heading" href="#gradient-descent"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Gradient Descent</h2>
+<p><img src="/MSE-Notes/assets/images/2022-03-17-14-52-37.png" alt="Gradient Descent with weight decay"></p>
+<p>there is <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> regularization.
+green is <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">L_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> and red is <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p><img src="/MSE-Notes/assets/images/2022-03-17-15-00-25.png" alt="Regularization"></p>
+<h2 id="dropout"><a aria-hidden="true" class="anchor-heading" href="#dropout"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dropout</h2>
+<p>Very versatile (vielseitig)</p>
+<p>Example of dropout <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span></span> flip coin if you should go to work. Company would be less dependent on single employees but has to adapt the organization.</p>
+<h1 id="model-selection"><a aria-hidden="true" class="anchor-heading" href="#model-selection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Model selection</h1>
+<ul>
+<li>Big model
+<ul>
+<li>98% / 1% / 1%</li>
+</ul>
+</li>
+<li>small model
+<ul>
+<li>60% / 20% / 20%</li>
+</ul>
+</li>
+</ul>
+<h2 id="hyper-parameters"><a aria-hidden="true" class="anchor-heading" href="#hyper-parameters"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hyper Parameters</h2>
+<ul>
+<li>number of neurons</li>
+<li>number of layers</li>
+<li>learning rate</li>
+<li>batch size</li>
+<li>epochs</li>
+<li>dropout</li>
+<li>weight decay (regularization)</li>
+</ul>
+<h2 id="learning-curve-analysis"><a aria-hidden="true" class="anchor-heading" href="#learning-curve-analysis"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Learning curve analysis</h2>
+<h2 id="k-fold-cross-validation"><a aria-hidden="true" class="anchor-heading" href="#k-fold-cross-validation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>k-fold cross validation</h2>

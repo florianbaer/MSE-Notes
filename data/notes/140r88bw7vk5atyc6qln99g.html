@@ -1,0 +1,26 @@
+<h1 id="intro"><a aria-hidden="true" class="anchor-heading" href="#intro"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intro</h1>
+<p><a href="/MSE-Notes/notes/dzkel6khq6cnvj7ie210453">MSE</a> <a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">AnTeDe (Private)</a></p>
+<h1 id="introduction"><a aria-hidden="true" class="anchor-heading" href="#introduction"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Introduction</h1>
+<p>Banks want to do automatical summaries of investment reports.</p>
+<p>It is important to take to correct metric for getting the right result. F1_Score is not always the best metric.</p>
+<h2 id="how-you-should-proceed-with-nlp-problems"><a aria-hidden="true" class="anchor-heading" href="#how-you-should-proceed-with-nlp-problems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>How you should proceed with NLP-problems</h2>
+<ol>
+<li>Frame the problem and look at the big picture.</li>
+<li>Get the data.</li>
+<li>Explore the data to gain insights.</li>
+<li>Transform the data to better expose patterns to ML algorithms.</li>
+<li>Explore different ML models and shortlist the best ones.</li>
+<li>Fine-tune your models and combine them into a solution.</li>
+<li>Present the solution to colleagues.</li>
+<li>Launch and monitor the system.</li>
+</ol>
+<p><img src="/MSE-Notes/assets/images/AnTeDe1_Proceed.png" alt="How to proceed with NLP"></p>
+<h2 id="data-preparation"><a aria-hidden="true" class="anchor-heading" href="#data-preparation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Data preparation</h2>
+<ol>
+<li>Train a model with the data and evaluate it based on the validation / development set.</li>
+<li>Get insights how your selected model will perform with the test-data (<strong>ONLY AT THE END WHEN THE MODEL IS SELECTED</strong>)</li>
+</ol>
+<h2 id="pos-tagging"><a aria-hidden="true" class="anchor-heading" href="#pos-tagging"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>POS-Tagging</h2>
+<p>Check for the different kind of Tags (There are 9 Categories). You can tag them by <strong>rules</strong>, with <strong>neural networks</strong> etc... Caution: Words are created all day (nouns, verbs, adjectives...).</p>
+<h2 id="tokenization--sentence-segmentation"><a aria-hidden="true" class="anchor-heading" href="#tokenization--sentence-segmentation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tokenization / Sentence Segmentation</h2>
+<p>You can combine them to fix issues with <em>Mr. Jones</em> which could by a sentence split by easy rules.</p>

@@ -1,0 +1,414 @@
+{
+  "roots": [
+    {
+      "key": "ofsa5s7zh7imqa042iv23kt",
+      "title": "Root",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "children": [
+        {
+          "key": "dzkel6khq6cnvj7ie210453",
+          "title": "MSE",
+          "icon": "bookOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "7yrvxae9nca1mr4zzasadea",
+              "title": "Ss22",
+              "icon": "bookOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "kj1pwoo165dyoobj7g8zgfx",
+                  "title": "Antede",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "6q7lcnc29o7u1vvr9ykshov",
+                      "title": "Asdf",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "tnzs68kxt9dp9s7rygn5pqn",
+                      "title": "Document Representation and Querying",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "140r88bw7vk5atyc6qln99g",
+                      "title": "Intro",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "mqyodovkk5nrzkf68f7tb3d",
+                      "title": "Sentimentanalysis",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "kuwbzu69c3mhulobjgu0v5m",
+                      "title": "Textclassification",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "7inibpeeygbmh6bkxn4k53o",
+                  "title": "Datamgmt",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "uhemofj34vg8jafd2877yk6",
+                      "title": "Arraytypes",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "3qkegx4d6ewiusgycyhc7ph",
+                      "title": "CTE",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "ciu0yake7h4yeoop4tvacp0",
+                      "title": "Introduction",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "8pzvuh0fyuhmlhzbih4qz8b",
+                      "title": "Key-Value Stores",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "vb4bhayfh0jrbwytvdf4p1y",
+                      "title": "Sw01",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "5mrdc19f7v1gd5g6juiu6pv",
+                  "title": "Delearn",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "y8ndp41fjxupmbs5b1b4q5l",
+                      "title": "BackPropagation Algorithm",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "mp3s2gbnpnh2pqt1bz9y28j",
+                      "title": "Introduction DeLearn",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "me7llsjqm8u04nhwpg98pkl",
+                      "title": "Learningandoptimization",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "62cc8vdtyhx5uaodpdgndpw",
+                      "title": "Multi-Layer Perceptron",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "in8prn5nrppt3t3mdffwyxp",
+                      "title": "Overfitting_and_regularization",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "vsy4cv0gefy0z3w7zj38n48",
+                      "title": "Practical Work",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "d1n648rk41l7gvbk4b80o22",
+                  "title": "Help for final Exams",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "lplf9i41l0gs61sr7e00mep",
+                  "title": "Predmod",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "l2m463ofgvlro4hpzynkdia",
+                      "title": "F Test",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "ciu0yake7h46eood4tvacp0",
+                      "title": "Introduction",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "984v5ar6mfb2qypb1irs5ri",
+                      "title": "LMS 2",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "ciu0yake7h4yeood4tvacp0",
+                      "title": "LinearRegression",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "5tx7xfg1vw0o57e9ip5ylko",
+                      "title": "Multiple Linear Regression",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "d1gf7ejaj3q3ejp0sraf5u8",
+                      "title": "Multiplelinearregression",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "ciu0yake7h4ydood4tvacp0",
+                      "title": "Pre Semester",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "eweigxf641e01zqt3xd18pz",
+                      "title": "Qualitativevariables",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "075b837rsccm9l0g0vdwt69",
+                      "title": "Simplelinearregression",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "gpxfszz6893sl1o5x2rlg9f",
+                  "title": "Privlaw",
+                  "icon": "bookOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": [
+                    {
+                      "key": "i76dndf7hqtaja7jwyd0bde",
+                      "title": "GDPR",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "o2wa2tp4y6f1ov9u6fhw7u7",
+                      "title": "Introduction PrivLaw",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    },
+                    {
+                      "key": "39dffx21ajlgn9e34keaid0",
+                      "title": "Tutorial",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": [
+                        {
+                          "key": "8b4pyr2t1w9jtzdyoffd91n",
+                          "title": "Sw01",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "vault",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "key": "6p9mlltiq3uoyfcc7ibxh83",
+                      "title": "Why privacy and law",
+                      "icon": "bookOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "vjh08rvggmny4hbda89aqtd",
+                  "title": "Sw01",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                },
+                {
+                  "key": "1yfdsj6hlbkmez4crwxt09b",
+                  "title": "Sw03",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "vrc7o3pbnmcqgfwbbxyx8em",
+          "title": "Templates",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "children": [
+            {
+              "key": "ovbw5kz8mx38nhwwf7vxx21",
+              "title": "Mse",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "children": [
+                {
+                  "key": "l7jvkqdtaanqu9vhtyegn8e",
+                  "title": "asdf",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "ofsa5s7zh7imqa042iv23kt": null,
+    "vrc7o3pbnmcqgfwbbxyx8em": "ofsa5s7zh7imqa042iv23kt",
+    "ovbw5kz8mx38nhwwf7vxx21": "vrc7o3pbnmcqgfwbbxyx8em",
+    "l7jvkqdtaanqu9vhtyegn8e": "ovbw5kz8mx38nhwwf7vxx21",
+    "dzkel6khq6cnvj7ie210453": "ofsa5s7zh7imqa042iv23kt",
+    "7yrvxae9nca1mr4zzasadea": "dzkel6khq6cnvj7ie210453",
+    "5mrdc19f7v1gd5g6juiu6pv": "7yrvxae9nca1mr4zzasadea",
+    "vsy4cv0gefy0z3w7zj38n48": "5mrdc19f7v1gd5g6juiu6pv",
+    "in8prn5nrppt3t3mdffwyxp": "5mrdc19f7v1gd5g6juiu6pv",
+    "62cc8vdtyhx5uaodpdgndpw": "5mrdc19f7v1gd5g6juiu6pv",
+    "me7llsjqm8u04nhwpg98pkl": "5mrdc19f7v1gd5g6juiu6pv",
+    "mp3s2gbnpnh2pqt1bz9y28j": "5mrdc19f7v1gd5g6juiu6pv",
+    "y8ndp41fjxupmbs5b1b4q5l": "5mrdc19f7v1gd5g6juiu6pv",
+    "7inibpeeygbmh6bkxn4k53o": "7yrvxae9nca1mr4zzasadea",
+    "vb4bhayfh0jrbwytvdf4p1y": "7inibpeeygbmh6bkxn4k53o",
+    "8pzvuh0fyuhmlhzbih4qz8b": "7inibpeeygbmh6bkxn4k53o",
+    "ciu0yake7h4yeoop4tvacp0": "7inibpeeygbmh6bkxn4k53o",
+    "3qkegx4d6ewiusgycyhc7ph": "7inibpeeygbmh6bkxn4k53o",
+    "uhemofj34vg8jafd2877yk6": "7inibpeeygbmh6bkxn4k53o",
+    "kj1pwoo165dyoobj7g8zgfx": "7yrvxae9nca1mr4zzasadea",
+    "kuwbzu69c3mhulobjgu0v5m": "kj1pwoo165dyoobj7g8zgfx",
+    "mqyodovkk5nrzkf68f7tb3d": "kj1pwoo165dyoobj7g8zgfx",
+    "140r88bw7vk5atyc6qln99g": "kj1pwoo165dyoobj7g8zgfx",
+    "tnzs68kxt9dp9s7rygn5pqn": "kj1pwoo165dyoobj7g8zgfx",
+    "6q7lcnc29o7u1vvr9ykshov": "kj1pwoo165dyoobj7g8zgfx",
+    "1yfdsj6hlbkmez4crwxt09b": "7yrvxae9nca1mr4zzasadea",
+    "vjh08rvggmny4hbda89aqtd": "7yrvxae9nca1mr4zzasadea",
+    "gpxfszz6893sl1o5x2rlg9f": "7yrvxae9nca1mr4zzasadea",
+    "6p9mlltiq3uoyfcc7ibxh83": "gpxfszz6893sl1o5x2rlg9f",
+    "39dffx21ajlgn9e34keaid0": "gpxfszz6893sl1o5x2rlg9f",
+    "8b4pyr2t1w9jtzdyoffd91n": "39dffx21ajlgn9e34keaid0",
+    "o2wa2tp4y6f1ov9u6fhw7u7": "gpxfszz6893sl1o5x2rlg9f",
+    "i76dndf7hqtaja7jwyd0bde": "gpxfszz6893sl1o5x2rlg9f",
+    "lplf9i41l0gs61sr7e00mep": "7yrvxae9nca1mr4zzasadea",
+    "075b837rsccm9l0g0vdwt69": "lplf9i41l0gs61sr7e00mep",
+    "eweigxf641e01zqt3xd18pz": "lplf9i41l0gs61sr7e00mep",
+    "ciu0yake7h4ydood4tvacp0": "lplf9i41l0gs61sr7e00mep",
+    "d1gf7ejaj3q3ejp0sraf5u8": "lplf9i41l0gs61sr7e00mep",
+    "984v5ar6mfb2qypb1irs5ri": "lplf9i41l0gs61sr7e00mep",
+    "5tx7xfg1vw0o57e9ip5ylko": "lplf9i41l0gs61sr7e00mep",
+    "ciu0yake7h4yeood4tvacp0": "lplf9i41l0gs61sr7e00mep",
+    "ciu0yake7h46eood4tvacp0": "lplf9i41l0gs61sr7e00mep",
+    "l2m463ofgvlro4hpzynkdia": "lplf9i41l0gs61sr7e00mep",
+    "d1n648rk41l7gvbk4b80o22": "7yrvxae9nca1mr4zzasadea"
+  }
+}
